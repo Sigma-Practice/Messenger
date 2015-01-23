@@ -164,7 +164,7 @@
             <stopKey>stop</stopKey>
             <connectors>
                 <connector implementation=
-                                   "org.eclipse.jetty.server.nio.SelectChanelConnector">
+                                   "org.eclipse.jetty.server.nio.SelectChannelConnector">
                     <port>${jetty.port}</port>
                     <responseHeaderSize>16192</responseHeaderSize>
 
@@ -179,7 +179,7 @@
         <version>3.1</version>
         <configuration>
           <driver>org.hsqldb.jdbcDriver</driver>
-          <url>jdbc:hsqldb:file:${project.build.directory}/db/MessengerDB;shutdown=true</url>
+          <url>jdbc:hsqldb:file:${project.build.directory}/db/MessengerDB</url>
           <user>${flyway.user}</user>
           <password>${flyway.password}</password>
         </configuration>
